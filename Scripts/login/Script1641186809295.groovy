@@ -21,13 +21,11 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://alpha-admin.shopby.co.kr/pro/auth')
 
-WebUI.click(findTestObject('Object Repository/Page_shopby-pro-admin/input__ncp_input w220'))
+WebUI.click(findTestObject('login/input_login_password'))
 
-WebUI.setText(findTestObject('Object Repository/Page_shopby-pro-admin/input__ncp_input w220'), 'shopbyproadmin')
+WebUI.setText(findTestObject('login/input_login_password'), 'shopbyproadmin')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_shopby-pro-admin/input__w220'), 'YY6OvKdam5zXcWhrYqhBkg==')
+WebUI.setEncryptedText(findTestObject('login/input_login_id'), 'YY6OvKdam5zXcWhrYqhBkg==')
 
-WebUI.click(findTestObject('Object Repository/Page_shopby-pro-admin/button_'))
-
-WebUI.closeBrowser()
+WebUI.click(findTestObject('login/button_login'))
 
